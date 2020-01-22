@@ -28,6 +28,10 @@ image_filenames = []
 for filename in Path(top_level_dir).rglob('*.fits'):
     image_filenames.append(str(filename))
 
+for filename in Path(top_level_dir).rglob('*.fit'):
+    image_filenames.append(str(filename))
+
+
 bad_counter = 0
 
 for fits_filename in image_filenames:
