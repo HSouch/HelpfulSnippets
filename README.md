@@ -10,6 +10,12 @@ Sometimes, running batch downloads of FITS files leads to some strange or corrup
 It will print out the filenames of any files that won't open, and will tell you how many need to be dealt with (if any).
 
 
+## FITS Compiler
+Sometimes you want to compile a bunch of files in a directory into one big file for easier processing. This script does just that! Please note that the method requires all consistutent input FITS files to remain open until after saving the compiled file, until after when they are all closed. This might require high RAM usage forlarge files, but it runs very well on small to medium sized directories. 
+
+`python FitsCompiler.py input_directory/ output_filename.fits`
+
+
 ## Coverage Getter
 This script will obtain RA and DEC points of FITS images, running on a directory and finding all FITS files within nested subdirectories. For each file, it will obtain a WCS and image, and return RA and DEC points at the top left and bottom right corners of the image. 
 
