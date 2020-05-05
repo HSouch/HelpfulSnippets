@@ -16,3 +16,10 @@ This script will obtain RA and DEC points of FITS images, running on a directory
 `python coverage_getter.py top_level_dir -o output_filename.fits`
 
 It will save as an output table (the name can be customized by the user). Each row contains the filename, and 4 points to reconstruct a coverage map.
+
+## Command Line Args Template
+This script serves as a template for getting some software running that needs to take in command line arguments from the user. It includes a few examples to get you on your way.
+To test that things are working, you can run the following:
+
+`python CLArgsTemplate.py` and
+`python CLArgsTemplate.py -h`
