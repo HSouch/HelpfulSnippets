@@ -23,6 +23,13 @@ This script will obtain RA and DEC points of FITS images, running on a directory
 
 It will save as an output table (the name can be customized by the user). Each row contains the filename, and 4 points to reconstruct a coverage map.
 
+
+## Cutout Viewer
+This is a simple tool to generate a visualization of results from a set of cutouts. Will work seamlessly with the output of [Cutout Creator](https://github.com/HSouch/CutoutCreator). Users can specify the colormap to display images with (which must be [MatPlotLib friendly](https://matplotlib.org/3.1.0/gallery/color/colormap_reference.html)), and the DPI to adjust output image quality.
+
+`python CutoutViewer.py input_filename.fits output_filename --cmap STRING --dpi INT`
+
+
 ## Command Line Args Template
 This script serves as a template for getting some software running that needs to take in command line arguments from the user. It includes a few examples to get you on your way.
 To test that things are working, you can run the following:
