@@ -11,7 +11,7 @@ It will print out the filenames of any files that won't open, and will tell you 
 
 
 ## FITS Compiler
-Sometimes you want to compile a bunch of files in a directory into one big file for easier processing. This script does just that! Please note that the method requires all consistutent input FITS files to remain open until after saving the compiled file, until after when they are all closed. This might require high RAM usage forlarge files, but it runs very well on small to medium sized directories. 
+Sometimes you want to compile a bunch of files in a directory into one big file for easier processing. This script does just that! Please note that the method requires all consistutent input FITS files to remain open until after saving the compiled file, until after when they are all closed. This might require high RAM usage for large files, but it runs very well on small to medium sized directories. 
 
 `python FitsCompiler.py input_directory/ output_filename.fits`
 
