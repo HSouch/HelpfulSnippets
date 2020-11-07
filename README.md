@@ -36,3 +36,6 @@ To test that things are working, you can run the following:
 
 `python CLArgsTemplate.py` and
 `python CLArgsTemplate.py -h`
+
+## TBriDGE Command Line Wrapper
+This script `tbridge_cl.py` is designed to serve as a simple tool to get you going using `TBriDGE` through the command line. The user can easily configure this script moving forward to accomodate more unique projects.
