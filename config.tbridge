@@ -1,0 +1,33 @@
+# Directories and filenames -- Input and output
+CATALOG             = cat.fits
+IMAGE_DIRECTORY     = images/
+PSF_FILENAME        = i_psfs.fits
+OUT_DIR              = out/
+
+# Keys for masses, redshifts, and star-formation probability.
+MASS_KEY            = MASSES
+Z_KEY               = REDSHIFTS
+SFPROB_KEY          = SFPROBS
+
+# Keys for structural parameters. Magnitudes, half-light radii, Sersic index, ellipticity
+MAG_KEY             = i
+R50_KEY             = R50S
+N_KEY               = SERSIC_NS
+ELLIP_KEY           = ELLIPS
+
+# Cutout size, band, num-cores, arcsecs per pix, N models to gen
+SIZE                = 100
+BAND                = i
+CORES               = 4
+ARC_CONV             = 0.2
+N_MODELS            = 100
+
+# Bins to run through. (LOWER BOUND, UPPER BOUND, BIN WIDTH)
+# Note that the bins are defined by the LOWER BOUND to LOWER BOUND + BIN WIDTH
+MASS_BINS           = 10., 12., 0.4
+REDSHIFT_BINS       = 0.1, 0.9, 0.2
+SFPROB_BINS         = 0.0, 1, 0.5
+
+# Parameters for profile extraction.
+LINEAR              = True
+LINEAR_STEP         = 1
